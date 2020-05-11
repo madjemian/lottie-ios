@@ -1,0 +1,4 @@
+module Lottie {
+    umbrella "/Users/madjemian/projects/lottie-ios/lottie-ios/Classes"
+    export *
+}
