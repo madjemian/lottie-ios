@@ -23,8 +23,18 @@ let package = Package(
             name: "Lottie",
             path: "lottie-ios",
             exclude: ["Classes/MacCompatibility"],
-            publicHeadersPath: "Classes/**",
-            cSettings: [.headerSearchPath("${SRCROOT}/lottie-ios/Classes/**")]
+            publicHeadersPath: "Classes/PublicHeaders",
+            cSettings: [.headerSearchPath("Classes/AnimatableLayers"),
+            .headerSearchPath("Classes/AnimatableProperties"),
+            .headerSearchPath("Classes/Extensions"),
+            .headerSearchPath("Classes/MacCompatibility"),
+            .headerSearchPath("Classes/Models"),
+            .headerSearchPath("Classes/Private"),
+            .headerSearchPath("Classes/RenderSystem"),
+            .headerSearchPath("Classes/RenderSystem/AnimatorNodes"),
+            .headerSearchPath("Classes/RenderSystem/InterpolatorNodes"),
+            .headerSearchPath("Classes/RenderSystem/ManipulatorNodes"),
+            .headerSearchPath("Classes/RenderSystem/RenderNodes")]
         )
     ]
 )
