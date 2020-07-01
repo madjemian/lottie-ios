@@ -34,7 +34,8 @@ let package = Package(
             .headerSearchPath("Classes/RenderSystem/AnimatorNodes"),
             .headerSearchPath("Classes/RenderSystem/InterpolatorNodes"),
             .headerSearchPath("Classes/RenderSystem/ManipulatorNodes"),
-            .headerSearchPath("Classes/RenderSystem/RenderNodes")]
+            .headerSearchPath("Classes/RenderSystem/RenderNodes"),
+            .define("NS_BLOCK_ASSERTIONS=1", .when(configuration: .release))]
         )
     ]
 )
